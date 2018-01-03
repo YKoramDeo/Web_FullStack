@@ -54,6 +54,22 @@
       background: #3f51b5;
     }
 
+    /* header section */
+    .header{
+      position:relative;
+      padding:18px 5%;
+    }
+
+    .header .logo{
+      float:left;
+    }
+
+    .header .logo a{
+      font-size: 26px;
+      color:#3f51b5;
+      font-weight: normal;
+    }
+
     /* tablet CSS */
 
     @media all and (min-width:768px) {
@@ -77,6 +93,75 @@
 <body>
   <div id="wrap">
 
+    <header class="header cfixed">
+      <h1 class="logo"><a href>서울예수사랑교회</a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="">환영합니다</a></li>
+          <li><a href="">소개합니다</a></li>
+          <li><a href="">예배와 말씀</a></li>
+          <li><a href="">사역과 선교</a></li>
+          <li><a href="">성도와 교제</a></li>
+        </ul>
+      </nav>
+      <span class="menu-toggle-btn">
+        <span></span>
+      <span></span>
+      <span></span>
+      </span>
+    </header>
+
+    <article class="slider">
+      <img src="resource/picture_images/come_early_10min.png" alt="10분 일찍 오세요">
+    </article>
+
+    <section class="content">
+      <section class="display-section">
+        <div class="container">
+          <h2 class="sec-tit">WE ARE</h2>
+          <p class="desc">Contrary to popular belif, Lorem lpsum is not simply random text. It has roots in a<br>piece of classical Latin literature from 45BC, making it over 2000 years old.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="promotion-section">
+      <div class="container">
+        <ul class="promo-list">
+          <li>
+            <a href="#">
+            <img src="resource/source_images/promo01.png" alt="">
+            <h3>HOME</h3>
+            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <img src="resource/source_images/promo02.png" alt="">
+            <h3>WE ARE</h3>
+            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <img src="resource/source_images/promo03.png" alt="">
+            <h3>WORK</h3>
+            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <img src="resource/source_images/promo04.png" alt="">
+            <h3>BLOG</h3>
+            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">서울예수사랑교회</p>
+    </footer>
   </div>
 </body>
 
