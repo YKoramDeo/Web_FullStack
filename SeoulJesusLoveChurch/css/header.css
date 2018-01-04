@@ -1,0 +1,49 @@
+body {
+  font-size: 10px;
+  min-width: 320px
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+/* PC web */
+
+@media screen and (min-width:601px) {
+  header {
+    padding-top:20px;
+    padding-bottom:15px;
+    border-bottom:5px solid #000;
+  }
+
+  header .logo {
+    float:left;
+    margin-left: 3%;
+  }
+
+  header .logo a img {
+    width: 220px;
+    height: auto;
+  }
+
+  header nav {
+    float:right;
+    background: #123456;
+    padding-top: 2%;
+    margin-right:3%
+  }
+
+  header nav ul li {
+    float:left;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px 0 15px;
+  }
+
+  header nav ul li:nth-child(1){
+    position:relative;
+    right:50px;
+  }
+}
