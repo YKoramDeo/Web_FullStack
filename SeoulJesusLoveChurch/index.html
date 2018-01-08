@@ -72,13 +72,15 @@
       border-bottom: 1px solid #000;
     }
 
+    .header .full_width .logo{
+      width:90%;
+      float:left;
+    }
+
     .header .full_width .logo a img {
-      display: inline-block;
-      float: left;
-      position: relative;
+      display: block;
       width: 150px;
-      left: 50%;
-      margin-left: -75px;
+      margin: 0 auto;
       padding-top: 2%;
     }
 
@@ -141,7 +143,13 @@
     }
 
     .footer_box .logo a img {
-      width:25%;
+      display: block;
+      margin: 0 auto;
+      width:200px;
+    }
+
+    .footer_box .info p{
+      text-align: center;
     }
 
     /* tablet CSS */
@@ -156,21 +164,42 @@
 
       .header .full_width .logo a img {
         width: 35%;
-        left: 50%;
-        margin-left: -86.1px;
       }
 
       .header .full_width .menu-toggle-btn {
         margin-top: 5%;
       }
+
+      .footer_box .info #address{
+        margin-top: 3%;
+      }
+
+      .footer_box .info #fax{
+        margin:1% 0;
+      }
+
+      .footer_box .info #tel{
+        margin:1% 0;
+      }
+
+      .footer_box .info #copyright{
+        font-size: 0.75em;
+      }
+
     }
 
     /* PC CSS */
     @media all and (min-width:1024px) {
+      .header .full_width .logo{
+        display: inline-block;
+        float:left;
+        width:25%;
+        height:auto;
+      }
       .header .full_width .logo a img {
-        width: 17%;
-        left: 0%;
-        margin-left: 0;
+        display: inline-block;
+        width: 100%;
+        padding-top: 4%;
       }
 
       .header .full_width .gnb_ul {
@@ -193,6 +222,7 @@
 
       .footer_box .logo a img{
         float:left;
+        width:25%;
         margin-left: 1%;
       }
 
@@ -200,6 +230,10 @@
         float:left;
         padding-top: 1%;
         margin-left: 7%;
+      }
+
+      .footer_box .info p{
+        text-align: left;
       }
 
       .footer_box .info #tel {
