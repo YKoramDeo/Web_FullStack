@@ -47,11 +47,12 @@
 
     /* yk.oramdeo declare */
     body{
+      min-width: 320px;
       font-family: "나눔고딕","맑은고딕",Sans-serif, Helvetica;
     }
 
-    .full {
-      width: 90%;
+    .full_width {
+      max-width: 90%;
       margin: 0 auto;
       padding : 0;
     }
@@ -71,33 +72,54 @@
       border-bottom:1px solid #000;
     }
 
-    .header .full .logo a img {
+    .header .full_width .logo a img {
       display: inline-block;
       float: left;
-      width: 20%;
-      padding-top:1.75%;
+      position:relative;
+      width:150px;
+      left:50%;
+      margin-left: -75px;
+      padding-top:2%;
     }
 
-    .header .full .gnb_ul{
-      float:right;
-      width: 70%;
-      height: 100%;
-      font-size: 1.25em;
-      font-weight: 500;
-      font-style: normal;
+    .header .full_width .gnb_ul{
+      display: none;
+      top:100%;
+      left:0;
+      width:100%;
+      background: transparent;
     }
 
-    .header .full .gnb_ul li{
+    .header .full_width .gnb_ul li{
       display: inline-block;
       float:left;
       padding-top: 4%;
       padding-bottom: 4%;
-      margin-left: 5%;
+      margin-left: 2%;
     }
 
-    .header .full .gnb_ul li a{
+    .header .full_width .gnb_ul li a{
       color:#3c3c3c;
       letter-spacing: -0.025em;
+    }
+
+    .header .full_width .menu-toggle-btn {
+      display: block;
+      float:right;
+      width:20px;
+      margin-top: 4%;
+      cursor:pointer;
+    }
+
+    .header .full_width .menu-toggle-btn span{
+      display: block;
+      width:100%;
+      height:2px;
+      background: #3f51b5;
+    }
+
+    .header .full_width .menu-toggle-btn span:nth-child(2){
+      margin:5px 0;
     }
 
     .slider img {
@@ -114,11 +136,51 @@
       .m-divider {
         margin-top: 124px;
       }
+
+      .header .full_width .logo a img {
+        width: 35%;
+        left:50%;
+        margin-left: -86.1px;
+      }
+
+      .header .full_width .menu-toggle-btn {
+        margin-top: 5%;
+      }
     }
 
     /* PC CSS */
 
-    @media all and (min-width:1132px) {}
+    @media all and (min-width:1024px) {
+      .header .full_width .logo a img {
+        width:17%;
+        left:0%;
+        margin-left: 0;
+      }
+
+      .header .full_width .gnb_ul{
+        display: block !important;
+        float: right;
+        width: 75%;
+        height: 100%;
+        font-size: 1.25em;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .header .full_width .gnb_ul li{
+        margin-left: 6%;
+      }
+
+      .header .full_width .menu-toggle-btn {
+        display: none;
+      }
+    }
+
+    @media all and (min-width:1185px) {
+      .header .full_width .gnb_ul li{
+        margin-left: 8%;
+      }
+    }
   </style>
   <script src="../js/jquery-3.2.1.min.js">
   </script>
@@ -128,10 +190,10 @@
   <div id="wrap">
 
     <header class="header clearfixed">
-      <div class="full">
+      <div class="full_width">
         <div class="logo">
           <a href>
-          <img src="resource/main_logo_ver2.1.png" alt="서울예수사랑교회 헤더 로고">
+          <img src="resource/main_logo_ver3.0.png" alt="서울예수사랑교회 헤더 로고">
           </a>
         </div>
         <nav>
