@@ -124,13 +124,74 @@
       margin: 5px 0;
     }
 
-    .slider img {
-      width: 50%;
+    /* main-slider section */
+    .main-slider{
+      width: 100%;
+      height: auto;
+      background : #f5f5f5;
+    }
+
+    .main-slider #image-view{
+      width : 100%;
+      max-width: 100%;
+      height : auto;
+      background: #f5f5f5;
+    }
+
+    .main-slider #image-view img {
+      display: block;
+      margin:0 auto;
+    }
+
+    /* main-content section */
+    .main-content {
+      width: 100%;
+      height:900px;
+    }
+
+    .main-content .inner-boxs {
+      width: 100%;
+      height: 100%;
+      padding: 8.75px 0;
+      background: #f5f5f5;
+    }
+
+    .main-content .inner-boxs .small_box{
+      float:left;
+      display: inline-block;
+      width:21.82%;
+      max-width:100%;
+      height:auto;
+      margin-top: 8.75px;
+    }
+
+    .main-content .inner-boxs .middle_box{
+      float:left;
+      display: inline-block;
+      width:47.93%;
+      max-width: 100%;
+      height:auto;
+    }
+
+    .main-content .inner-boxs .big_box{
+      float:right;
+      display: inline-block;
+      width:48%;
+      max-width: 100%;
+      height:auto;
+      background: rgb(125, 180, 65);
+    }
+
+    .main-content .inner-boxs #welcome_box{ clear: both; }
+    .main-content .inner-boxs #vision_box, #worshipTime_box, #wayToCome_box{ margin-left: 4.23%; }
+    .main-content .inner-boxs #worshipVideo_box{
+      clear:left;
+      margin-top: 8.75px;
+      background: rgb(255, 240, 70);
     }
 
     /* footer section */
     .footer {
-      position: absolute;
       width: 100%;
       height: auto;
       background: #3b3838;
@@ -256,10 +317,14 @@
       .header .full_width .gnb_ul li {
         margin-left: 8%;
       }
+
+      .main-slider #image-view img{
+        margin : 0 auto;
+      }
     }
   </style>
-  <script src="js/jquery-3.2.1.min.js">
-  </script>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -289,53 +354,40 @@
       </div>
     </header>
 
-    <article class="slider">
-      <img src="resource/picture_images/come_early_10min.png" alt="10분 일찍 오세요">
-    </article>
+    <div class="main-slider">
+    <div id="image-view">
+      <img src="resource/picture_images/renewaling.png" alt="홈페이지 리뉴얼 중입니다.">
+    </div>
+    </div>
 
-    <section class="content">
-      <section class="display-section">
-        <div class="container">
-          <h2 class="sec-tit">WE ARE</h2>
-          <p class="desc">Contrary to popular belif, Lorem lpsum is not simply random text. It has roots in a<br>piece of classical Latin literature from 45BC, making it over 2000 years old.</p>
-        </div>
-      </section>
-    </section>
+    <div class="main-content">
+    <div class="inner-boxs full_width">
 
-    <section class="promotion-section">
-      <div class="container">
-        <ul class="promo-list">
-          <li>
-            <a href="#">
-            <img src="resource/source_images/promo01.png" alt="">
-            <h3>HOME</h3>
-            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-            <img src="resource/source_images/promo02.png" alt="">
-            <h3>WE ARE</h3>
-            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-            <img src="resource/source_images/promo03.png" alt="">
-            <h3>WORK</h3>
-            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-            <img src="resource/source_images/promo04.png" alt="">
-            <h3>BLOG</h3>
-            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="middle_box" id="voiceBible_box">
+      <img src="resource/source_images/voice_bible_ver3.0.png" alt="들리는 성경">
+    </div>
+    <div class="big_box" id="promotion_box">
+      <img src="resource/source_images/crosslove_promotion_ver3.0.png" alt="도서출판 십자가사랑">
+    </div>
+    <div class="middle_box" id="worshipVideo_box">
+      <img src="resource/source_images/worship_video_ver2.0.png" alt="예배영상">
+    </div>
+
+    <div class="small_box" id="welcome_box">
+      <img src="resource/source_images/welcome.png" alt="환영합니다">
+    </div>
+    <div class="small_box" id="vision_box">
+      <img src="resource/source_images/vision.png" alt="교회 비전">
+    </div>
+    <div class="small_box" id="worshipTime_box">
+      <img src="resource/source_images/worship_time.png" alt="예배시간">
+    </div>
+    <div class="small_box" id="wayToCome_box">
+      <img src="resource/source_images/way_to_come.png" alt="오시는 길">
+    </div>
+    </div>
+    </div>
+    </div>
 
     <footer class="footer">
       <div class="footer_box full_width clearfixed">
@@ -353,6 +405,7 @@
       </div>
     </footer>
   </div>
+
 </body>
 
 </html>
