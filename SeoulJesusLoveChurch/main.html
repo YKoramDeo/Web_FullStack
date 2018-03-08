@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/cssReset_2.0.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+      $(window).on('load',function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        });
+      });
+    </script>
+
+
     <style>
     /* basic  CSS */
     .container {
@@ -96,6 +107,13 @@
       margin:0.625em 0; /* 0.625em = 10px */
     }
 
+    /* flexslider sesssion */
+    /* slide size */
+    .flex-container { background-color: #fff; padding: 1.25em 0; text-align: center;}
+    .flexslider { border:0px solid #fff;}
+    .flex-control-nav { bottom: -1.25em; }
+    .flex-control-paging li a {width:0.625em; height:0.625em;}
+
     /* tablet CSS */
     @media all and (min-width:768px){
 
@@ -107,6 +125,9 @@
     .header .gnb li{ padding: 0 0.625em; }
     .header .gnb li a {font-size: 0.875em;}
     .header .menu-toggle-btn{ display: none !important; }
+
+    /* flexslider sesssion */
+    .flex-control-nav { bottom: 0.625em; }
     }
 
     /*   PC   CSS */
@@ -121,6 +142,8 @@
       .header .gnb li a {font-size: 1em;}
     }
     </style>
+
+
   </head>
   <body>
     <div id="wrap">
@@ -145,10 +168,22 @@
     </span>
 
     </header>
+
     <hr class="line">
-    <div class="slider">
-    <p>slider</p>
-    </div>
+
+    <section class="flex-container">
+      <div class="flexslider full_width">
+        <ul class="slides">
+          <li>
+            <img src="resource/picture_images/renewaling.png" />
+          </li>
+          <li>
+            <img src="resource/picture_images/come_early_10min.png" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <div class="article">
     <p>article</p>
     </div>
