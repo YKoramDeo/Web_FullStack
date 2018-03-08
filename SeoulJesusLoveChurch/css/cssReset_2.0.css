@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 웹 폰트 CSS */
 
-@import url('https://fonts.googleapis.com/css?familt=Montserrat|PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif');
 /* CSS 초기화 */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
@@ -42,7 +42,6 @@ a {
 
 img {
   vertical-align: top;
-  max-width: 100%;
 }
 
 hr {
