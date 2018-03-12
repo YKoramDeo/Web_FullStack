@@ -21,9 +21,21 @@
 
     <style>
     /* basic  CSS */
+    body {
+      min-width: 320px;
+      font-family: "나눔고딕", "맑은고딕", Sans-serif, Helvetica;
+      font-size: 1em;
+    }
+
+    .full_width {
+      width:100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
     .container {
-      width: 90%;
-      max-width: 1132px;
+      width: 95%;
+      max-width: 1170px;
       margin: 0 auto;
     }
 
@@ -64,18 +76,6 @@
       background: #3f51b5;
     }
 
-    body {
-      min-width: 320px;
-      font-family: "나눔고딕", "맑은고딕", Sans-serif, Helvetica;
-      font-size: 1em;
-    }
-
-    .full_width {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0;
-    }
-
     /*.header { background-color: rgb(250, 180, 160); }*/
     .slider { background-color: rgb(200, 190, 250); }
     .article { background-color: rgb(200, 250, 150); }
@@ -101,6 +101,11 @@
     }
 
     /* flexslider sesssion */
+    /* slide size */
+    .flex-container { background-color: #fff; padding: 1.25em 0; text-align: center;}
+    .flexslider { margin:0; border:0px solid #fff;}
+    .flex-control-nav { bottom: -1.25em; }
+    .flex-control-paging li a {width:0.625em; height:0.625em;}
 
     /* footer section */
     .footer { width: 100%; background-color: #3b3838; padding: 2.5em 0; }
@@ -123,7 +128,7 @@
     .header .menu-toggle-btn{ display: none !important; }
 
     /* flexslider sesssion */
-
+    .flex-control-nav { bottom: 0.625em; }
     }
 
     /*   PC   CSS */
@@ -146,8 +151,6 @@
       .footer .info #copyright { float:left; padding-top: 0.75em; }
     }
     </style>
-
-
   </head>
   <body>
     <div id="wrap">
@@ -173,7 +176,20 @@
 
     <hr class="line">
 
-
+    <section class="flex-container clearfixed">
+      <div class="container">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="resource/picture_images/renewaling.png" />
+            </li>
+            <li>
+              <img src="resource/picture_images/come_early_10min.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <div class="article">
     <p>article</p>
