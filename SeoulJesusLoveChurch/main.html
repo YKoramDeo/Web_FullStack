@@ -23,12 +23,11 @@
     /* basic  CSS */
     body {
       min-width: 320px;
-      font-family: "나눔고딕", "맑은고딕", Sans-serif, Helvetica;
+      font-family: 'Nanum Gothic','Malgun Gothic', "나눔고딕", "맑은고딕", Sans-serif, Helvetica;
       font-size: 1em;
     }
 
     .full_width {
-      width:100%;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -77,11 +76,10 @@
     }
 
     /*.header { background-color: rgb(250, 180, 160); }*/
-    .slider { background-color: rgb(200, 190, 250); }
-    .article { background-color: rgb(200, 250, 150); }
     .display { background-color: rgb(180, 255, 250); }
     .promotion { background-color: rgb(250, 240, 150); }
     /* moblie(base) CSS */
+    .main_color { color:#3f51b5; }
 
     /* header session */
     .header{ postion: relative; }
@@ -92,7 +90,7 @@
     .header .gnb{ display: none; } /* 1.25em = 20px */
     .header .gnb li{ display: inline-block; float:left; text-align: center; }
     .header .gnb li a{ font-weight: bold; color:#4d4959; }
-    .header .menu-toggle-btn{ display: inline; float:right; font-size: 1.25em; color:rgba(63, 81, 181);
+    .header .menu-toggle-btn{ display: inline; float:right; font-size: 1.25em;
                               padding:2.5rem 0; margin-right: 5%; }
 
     .line { width: 100%; height:0; border: 0;
@@ -102,16 +100,24 @@
 
     /* flexslider sesssion */
     /* slide size */
-    .flex-container { background-color: #fff; padding: 1.25em 0; text-align: center;}
+    .flex-container { background-color: #fff; padding: 1.875em 0; text-align: center;}
     .flexslider { margin:0; border:0px solid #fff;}
     .flex-control-nav { bottom: -1.25em; }
     .flex-control-paging li a {width:0.625em; height:0.625em;}
+
+    /* article session */
+    .article { padding: 1.75em 0; font-family: 'Nanum Myeongjo', serif !important;  text-align: center;}
+    .article .notify { font-size:1.1em; font-weight: bold; color: #4d4959}
+    .article .title { font-size:3.25em; font-family: 'Nanum Gothic','Malgun Gothic', "나눔고딕", "맑은고딕", Sans-serif, Helvetica !important; font-weight: bold; color: #4d4959; }
+    .article .title:before { content: " "; display: block; border: solid 1px #4d4959; width: 3.125rem; margin: 2.5rem auto; }
+    .article #acts_1_8 { font-size:1.25em; margin:3.75rem 0; font-style: oblique; font-weight: 300; color:#rgb(51, 51, 51);  line-height: 150%; }
+    .article .introduction { font-size:1em; color:#777; font-weight: 300; line-height: 200%; }
 
     /* footer section */
     .footer { width: 100%; background-color: #3b3838; padding: 2.5em 0; }
     .footer .sub_logo { float:none; }
     .footer .sub_logo img { display: block; margin: 0 auto; height: 3.75em; }
-    .footer .info { float:none; height: auto; padding: 1.25em 0; margin: 0 1.875em; color: #a6a6a6; font-weight: 500; }
+    .footer .info { float:none; height: auto; padding: 0.625em 0; margin: 0 1.875em; color: #a6a6a6; font-weight: 600; }
     .footer .info p { float: none; text-align: center; line-height: 150%; }
     .footer .info #copyright{ font-size: 0.75em; }
 
@@ -129,6 +135,12 @@
 
     /* flexslider sesssion */
     .flex-control-nav { bottom: 0.625em; }
+
+    /* article session */
+    .article .notify { font-size: 1.125em; }
+    .article .title { font-size: 3.125em; }
+    .article #acts_1_8 { font-size: 1.25em; }
+    .article .introduction { font-size: 1.25em; }
     }
 
     /*   PC   CSS */
@@ -141,6 +153,9 @@
       .header .gnb{ padding:1.25em 25%; } /* 1.25em = 20px */
       .header .gnb li { width:20%; padding : 0; }
       .header .gnb li a {font-size: 1em;}
+
+      /* article session */
+      .article #acts_1_8 { font-size: 1.75em; }
 
       /* footer session */
       .footer .sub_logo { float: left; margin: 0 1.875em; }
@@ -169,7 +184,7 @@
         <li><a href="">COMMUNITY</a></li>
       </ul>
     </nav>
-    <span class="menu-toggle-btn">
+    <span class="menu-toggle-btn main_color">
       <i class="fa fa-toggle-off fa-lg"></i>
     </span>
     </header>
@@ -192,7 +207,28 @@
     </section>
 
     <div class="article">
-    <p>article</p>
+      <div class="full_width clearfixed">
+        <div class="notify">
+          <span class="main_color">서울예수사랑교회</span>
+          <span>는 대한예수교장로회(백석) 서울중앙노회</span>
+          <span class="main_color">소속</span>
+          <span>입니다</span>
+        </div>
+        <div class="title">
+          SEOUL JESUS LOVE CHURCH
+        </div>
+        <div id="acts_1_8">
+          "오직 성령이 너희에게 임하시면 너희가 권능을 받고 예루살렘과 온 유대와<br />사마리아와 땅 끝까지 이르러 내 증인이 되리라 하시니라"<br/> [사도행전 1:8]
+        </div>
+        <div class="introduction">
+          이 말씀을 중심으로 그리스도의 한 몸으로 연합되어진 교회 중에 <br/>
+          <span class="main_color"><b>(NK에서 이스라엘까지)</b></span> 서진을 향해 한 걸음 한 걸음 나아가는 교회입니다. <br/>
+          <br/>
+          <span class="main_color"><b>서울예수사랑교회</b></span>는 지역 사회 속에서 빛과 소금의 사명을 감당하고 (마 5:13-14) <br/>
+          상처입고 고통당하는 이웃과 친구 되어 (눅 10:30-37) <br/>
+          그들과 함께 하고 예수 그리스도의 사랑과 손길을 전하는 교회입니다.
+        </div>
+      </div>
     </div>
     <div class="display">
     <p>display</p>
@@ -201,8 +237,8 @@
     <p>promotion</p>
     </div>
 
-    <footer class="footer clearfixed">
-      <div class="full_width">
+    <footer class="footer">
+      <div class="full_width clearfixed">
         <div class="sub_logo">
           <img src="resource/sub_logo_ver3.0.png" alt="서울예수사랑교회 서브 로고">
         </div>
